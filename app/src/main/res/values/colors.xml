@@ -5,4 +5,5 @@
     <color name="main_background">#DFE3E6</color>
     <color name="light_background">#EFF3F6</color>
     <color name="card_background">#E7EBEE</color>
+    <color name="sun_color">#ff8100</color>
 </resources>

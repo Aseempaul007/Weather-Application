@@ -20,6 +20,7 @@
             android:text="@string/tikri"
             android:gravity="center"
             android:textSize="@dimen/_18sdp"
+            android:fontFamily="@font/roboto_bold"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"

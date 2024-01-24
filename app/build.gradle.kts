@@ -51,5 +51,6 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     implementation ("com.intuit.sdp:sdp-android:1.1.0")
-    implementation ("com.mikhaellopez:circularprogressbar:3.1.0")
+    implementation ("com.github.jasvir23007:Custom-Progress-Stages:1.1")
+
 }

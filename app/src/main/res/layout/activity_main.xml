@@ -50,11 +50,11 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/weather_recycler_time"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
             tools:listitem="@layout/weather_item" />
 
@@ -63,7 +63,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:background="@color/card_background"
+            android:background="@color/white"
             android:elevation="4dp"
             app:cardCornerRadius="16dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -100,10 +100,11 @@
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="@font/roboto_bold"
                     android:text="15-day weather forecast"
                     android:textAlignment="center"
-                    android:textSize="22sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -119,9 +120,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto_medium"
             android:text="@string/weather_details"
-            android:textSize="18sp"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
@@ -143,7 +145,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/light_background"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -164,6 +168,7 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginBottom="8dp"
                     android:text="Feels Like"
+                    android:fontFamily="@font/roboto_medium"
                     app:layout_constraintBottom_toTopOf="@+id/value"
                     app:layout_constraintStart_toStartOf="@+id/image_icon" />
 
@@ -173,6 +178,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginBottom="16dp"
                     android:text="16"
+                    android:fontFamily="@font/roboto_bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/condition"
                     app:layout_constraintStart_toStartOf="@+id/condition" />
@@ -199,7 +205,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/light_background"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -212,14 +220,14 @@
                     app:layout_constraintHorizontal_bias="0.45"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_temperature" />
+                    app:srcCompat="@drawable/ic_air" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Feels Like"
+                    android:text="W Wind"
                     app:layout_constraintBottom_toTopOf="@+id/value"
                     app:layout_constraintStart_toStartOf="@+id/image_icon" />
 
@@ -228,7 +236,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginBottom="16dp"
-                    android:text="16"
+                    android:text="13km/h"
+                    android:fontFamily="@font/roboto_bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/condition"
                     app:layout_constraintStart_toStartOf="@+id/condition" />
@@ -253,7 +262,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/light_background"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -266,14 +277,14 @@
                     app:layout_constraintHorizontal_bias="0.45"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_temperature" />
+                    app:srcCompat="@drawable/ic_humidity" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Feels Like"
+                    android:text="Humidity"
                     app:layout_constraintBottom_toTopOf="@+id/value"
                     app:layout_constraintStart_toStartOf="@+id/image_icon" />
 
@@ -282,7 +293,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginBottom="16dp"
-                    android:text="16"
+                    android:text="62%"
+                    android:fontFamily="@font/roboto_bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/condition"
                     app:layout_constraintStart_toStartOf="@+id/condition" />
@@ -311,11 +323,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/light_background"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="16dp"
@@ -324,14 +338,14 @@
                     app:layout_constraintHorizontal_bias="0.45"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_temperature" />
+                    app:srcCompat="@drawable/ic_uv" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Feels Like"
+                    android:text="UV"
                     app:layout_constraintBottom_toTopOf="@+id/value"
                     app:layout_constraintStart_toStartOf="@+id/image_icon" />
 
@@ -340,7 +354,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginBottom="16dp"
-                    android:text="16"
+                    android:text="0 Very weak"
+                    android:fontFamily="@font/roboto_bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/condition"
                     app:layout_constraintStart_toStartOf="@+id/condition" />
@@ -366,7 +381,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/light_background"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -379,14 +396,14 @@
                     app:layout_constraintHorizontal_bias="0.45"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_temperature" />
+                    app:srcCompat="@drawable/ic_visibility" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Feels Like"
+                    android:text="Visibility"
                     app:layout_constraintBottom_toTopOf="@+id/value"
                     app:layout_constraintStart_toStartOf="@+id/image_icon" />
 
@@ -395,7 +412,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginBottom="16dp"
-                    android:text="16"
+                    android:text="1km"
+                    android:fontFamily="@font/roboto_bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/condition"
                     app:layout_constraintStart_toStartOf="@+id/condition" />
@@ -420,7 +438,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/light_background"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -433,14 +453,14 @@
                     app:layout_constraintHorizontal_bias="0.45"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_temperature" />
+                    app:srcCompat="@drawable/ic_air" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Feels Like"
+                    android:text="Air Pressure"
                     app:layout_constraintBottom_toTopOf="@+id/value"
                     app:layout_constraintStart_toStartOf="@+id/image_icon" />
 
@@ -449,7 +469,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginBottom="16dp"
-                    android:text="16"
+                    android:text="1017 hpa"
+                    android:fontFamily="@font/roboto_bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/condition"
                     app:layout_constraintStart_toStartOf="@+id/condition" />
@@ -459,7 +480,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="180dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="16dp"
             app:cardCornerRadius="16dp"
@@ -473,26 +494,27 @@
                 android:layout_height="match_parent"
                 android:background="@color/light_background">
 
-                <com.mikhaellopez.circularprogressbar.CircularProgressBar
-                    android:id="@+id/circularProgressBar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cpb_background_progressbar_color="#b6bbd8"
-                    app:cpb_background_progressbar_width="5dp"
-                    app:cpb_progress_direction="to_right"
-                    app:cpb_progressbar_color="#3f51b5"
-                    app:cpb_progressbar_width="10dp"
-                    app:cpb_round_border="false"
+                <com.jasvir.seekbar.SemiCircleArcProgressBar
+                    android:id="@+id/semiCircleArcProgressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView" />
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    app:percent="90"
+                    app:progressBarColor="@color/sun_color"
+                    app:progressBarWidth="10dp"
+                    app:progressPlaceHolderColor="@color/main_background"
+                    app:progressPlaceHolderWidth="10dp" />
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_18sdp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_sunrise" />
@@ -500,9 +522,9 @@
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_18sdp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_sunset" />
@@ -511,41 +533,47 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:text="Sunrise"
-                    app:layout_constraintBottom_toTopOf="@+id/textView3"
-                    app:layout_constraintEnd_toEndOf="@+id/textView3"
-                    app:layout_constraintStart_toStartOf="@+id/textView3" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/semiCircleArcProgressBar"
+                    app:layout_constraintTop_toBottomOf="@+id/semiCircleArcProgressBar"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
                     android:layout_marginBottom="16dp"
                     android:text="07:12"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintEnd_toEndOf="@+id/textView"
+                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:text="Sunset"
-                    app:layout_constraintBottom_toTopOf="@+id/textView5"
-                    app:layout_constraintEnd_toEndOf="@+id/textView5"
-                    app:layout_constraintStart_toStartOf="@+id/textView5" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/semiCircleArcProgressBar"
+                    app:layout_constraintTop_toBottomOf="@+id/semiCircleArcProgressBar"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
                     android:layout_marginBottom="16dp"
                     android:text="17:33"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintEnd_toEndOf="@+id/textView4"
+                    app:layout_constraintStart_toStartOf="@+id/textView4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 

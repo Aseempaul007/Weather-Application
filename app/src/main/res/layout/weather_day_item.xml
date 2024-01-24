@@ -12,6 +12,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:text="Today"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,25 +33,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_medium"
         android:text="Fog"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/image"
         app:layout_constraintStart_toEndOf="@+id/image"
         app:layout_constraintTop_toTopOf="@+id/image" />
 
     <TextView
-        android:id="@+id/min_temp"
+        android:id="@+id/max_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
         android:text="18"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/slash"
         app:layout_constraintEnd_toStartOf="@+id/slash"
         app:layout_constraintTop_toTopOf="@+id/slash" />
 
     <TextView
-        android:id="@+id/max_temp"
+        android:id="@+id/min_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
         android:text="18"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/image"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/image" />
@@ -59,9 +67,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="/"
-        app:layout_constraintBottom_toBottomOf="@+id/max_temp"
-        app:layout_constraintEnd_toStartOf="@+id/max_temp"
-        app:layout_constraintTop_toTopOf="@+id/max_temp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/min_temp"
+        app:layout_constraintEnd_toStartOf="@+id/min_temp"
+        app:layout_constraintTop_toTopOf="@+id/min_temp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -82,5 +91,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.45" />
+        app:layout_constraintGuide_percent="0.39" />
 </androidx.constraintlayout.widget.ConstraintLayout>

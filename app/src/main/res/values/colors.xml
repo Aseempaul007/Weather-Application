@@ -6,4 +6,5 @@
     <color name="light_background">#EFF3F6</color>
     <color name="card_background">#E7EBEE</color>
     <color name="sun_color">#ff8100</color>
+    <color name="grey">#FFB1B1B1</color>
 </resources>

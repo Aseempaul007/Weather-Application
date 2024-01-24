@@ -152,7 +152,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="16dp"
                     app:layout_constraintBottom_toTopOf="@+id/condition"
@@ -212,7 +212,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="16dp"
                     app:layout_constraintBottom_toTopOf="@+id/condition"
@@ -269,7 +269,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="16dp"
                     app:layout_constraintBottom_toTopOf="@+id/condition"
@@ -330,7 +330,7 @@
                 <ImageView
                     android:layout_width="@dimen/_22sdp"
                     android:layout_height="@dimen/_22sdp"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="16dp"
                     app:layout_constraintBottom_toTopOf="@+id/condition"
@@ -388,7 +388,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="16dp"
                     app:layout_constraintBottom_toTopOf="@+id/condition"
@@ -445,7 +445,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="16dp"
                     app:layout_constraintBottom_toTopOf="@+id/condition"

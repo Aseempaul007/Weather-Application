@@ -2,5 +2,21 @@
     <string name="app_name">Weather Application</string>
     <string name="tikri">Tikri</string>
     <string name="weather_details">Weather Details</string>
+    <string name="feels_like">Feels Like</string>
+    <string name="_16">16</string>
+    <string name="w_wind">W Wind</string>
+    <string name="_13km_h">13km/h</string>
+    <string name="humidity">Humidity</string>
+    <string name="_62">62%</string>
+    <string name="uv">UV</string>
+    <string name="_0_very_weak">0 Very weak</string>
+    <string name="visibility">Visibility</string>
+    <string name="_1km">1km</string>
+    <string name="air_pressure">Air Pressure</string>
+    <string name="_1017_hpa">1017 hpa</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="_07_12">07:12</string>
+    <string name="sunset">Sunset</string>
+    <string name="_17_33">17:33</string>
 
 </resources>

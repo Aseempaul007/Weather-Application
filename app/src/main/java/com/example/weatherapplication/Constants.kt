@@ -1,7 +1,6 @@
 package com.example.weatherapplication
 
 import com.example.weatherapplication.data.WeatherDay
-import com.example.weatherapplication.data.WeatherDetail
 import com.example.weatherapplication.data.WeatherTime
 
 object Constants {
@@ -35,16 +34,4 @@ object Constants {
         return data
     }
 
-    fun getWeatherDetail(): MutableList<WeatherDetail>{
-        val data: MutableList<WeatherDetail> = mutableListOf()
-
-        data.add(WeatherDetail(R.drawable.ic_temperature,"Feels Like","16"))
-        data.add(WeatherDetail(R.drawable.ic_air,"W wind","13km/h"))
-        data.add(WeatherDetail(R.drawable.ic_humidity,"Humidity","63%"))
-        data.add(WeatherDetail(R.drawable.ic_uv,"UV","0 Very weak"))
-        data.add(WeatherDetail(R.drawable.ic_visibility,"Visibility","1 km"))
-        data.add(WeatherDetail(R.drawable.ic_air,"Air Pressure","1017 hpa"))
-
-        return data
-    }
 }
